@@ -1,0 +1,5 @@
+package NameHashing
+
+trait NameHash {
+  
+}

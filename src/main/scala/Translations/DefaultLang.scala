@@ -1,4 +1,4 @@
-package translations
+package Translations
 
 class DefaultLang {
     val intro_message: String = "Hello and Welcome to Scalastar: The Warrior Cats Name generator you've all been waiting for"

@@ -1,71 +1,77 @@
 package NameHashing
 
 class OriginalNameHash extends NameHash{
-    val firstNameDictionary = Map(
-        "a" -> "",
-        "b" -> "",
-        "c" -> "",
-        "d" -> "",
-        "e" -> "",
-        "f" -> "",
-        "g" -> "",
-        "h" -> "",
-        "i" -> "",
-        "j" -> "",
-        "k" -> "",
-        "l" -> "",
-        "m" -> "",
-        "n" -> "",
-        "o" -> "",
-        "p" -> "",
-        "q" -> "",
-        "r" -> "",
-        "s" -> "",
-        "t" -> "",
-        "u" -> "",
-        "v" -> "",
-        "w" -> "",
-        "x" -> "",
-        "y" -> "",
-        "z" -> "",
-    )
+      																									
 
-    val lastNameDictionary = Map(
-        "a" -> "",
-        "b" -> "",
-        "c" -> "",
-        "d" -> "",
-        "e" -> "",
-        "f" -> "",
-        "g" -> "",
-        "h" -> "",
-        "i" -> "",
-        "j" -> "",
-        "k" -> "",
-        "l" -> "",
-        "m" -> "",
-        "n" -> "",
-        "o" -> "",
-        "p" -> "",
-        "q" -> "",
-        "r" -> "",
-        "s" -> "",
-        "t" -> "",
-        "u" -> "",
-        "v" -> "",
-        "w" -> "",
-        "x" -> "",
-        "y" -> "",
-        "z" -> "",
+    val firstNameDictionary = Map(
+        "a" -> "hawk",
+        "b" -> "tangle",
+        "c" -> "wild",
+        "d" -> "swift",
+        "e" -> "rain",
+        "f" -> "thorn",
+        "g" -> "fuzzy",
+        "h" -> "mud",
+        "i" -> "loud",
+        "j" -> "bramble",
+        "k" -> "moss",
+        "l" -> "leopard",
+        "m" -> "scar",
+        "n" -> "bright",
+        "o" -> "running",
+        "p" -> "sand",
+        "q" -> "dawn",
+        "r" -> "ice",
+        "s" -> "spotted",
+        "t" -> "rock",
+        "u" -> "red",
+        "v" -> "mouse",
+        "w" -> "tiger",
+        "x" -> "flower",
+        "y" -> "claw",
+        "z" -> "blue",
     )
-  }
-  	tangle	wild	swift	rain	thorn	fuzzy	mud	loud	bramble	moss	leopard	scar	bright	running	sand	dawn	ice	spotted	rock	red	mouse	tiger	flower	claw	blue
+																									
+    val lastNameDictionary = Map(
+        "a" -> "fire",
+        "b" -> "claw",
+        "c" -> "talon",
+        "d" -> "eyes",
+        "e" -> "fur",
+        "f" -> "tail",
+        "g" -> "mask",
+        "h" -> "face",
+        "i" -> "storm",
+        "j" -> "foot",
+        "k" -> "ears",
+        "l" -> "pelt",
+        "m" -> "nose",
+        "n" -> "heart",
+        "o" -> "belly",
+        "p" -> "shadow",
+        "q" -> "flower",
+        "r" -> "breath",
+        "s" -> "path",
+        "t" -> "legs",
+        "u" -> "sky",
+        "v" -> "pool",
+        "w" -> "head",
+        "x" -> "wish",
+        "y" -> "stalker",
+        "z" -> "sayer",
+    )
   
   def hash(firstName: String, lastName: String): String = {
+    println(prepareString(firstName))
+    var prefix = firstNameDictionary(prepareString(firstName).take(1)).capitalize
+    var sufix = lastNameDictionary(prepareString(lastName).take(1))
 
+    return s"$prefix$sufix"
   }
+  
 
   def HashType(): Unit = {
-    //
+    print("whoops")
+    return
   }
 }

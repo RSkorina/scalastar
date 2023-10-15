@@ -1,13 +1,14 @@
 package frontEnd
 import Translations.DefaultLang
 import NameHashing.OriginalNameHash
+import NameHashing.IrreversableHash
 
 
 object FrontEnd {
   
   def initiation(): Unit = {
     val translation = new DefaultLang()
-    val hashing = new OriginalNameHash()
+    val hashing = new IrreversableHash()
 
 
     println(translation.drum_roll)

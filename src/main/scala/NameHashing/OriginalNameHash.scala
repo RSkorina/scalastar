@@ -62,16 +62,9 @@ class OriginalNameHash extends NameHash{
     )
   
   def hash(firstName: String, lastName: String): String = {
-    println(prepareString(firstName))
     var prefix = firstNameDictionary(prepareString(firstName).take(1)).capitalize
     var sufix = lastNameDictionary(prepareString(lastName).take(1))
 
     return s"$prefix$sufix"
-  }
-  
-
-  def HashType(): Unit = {
-    print("whoops")
-    return
   }
 }

@@ -19,10 +19,10 @@ class IrreversableHash extends NameHash{
 
   // could consider making this a lift
   def hashString(inputName: String, listResponses: Array[String]): String = {
-    val salt: Int = (inputName.length() * 7) % listResponses.length
+    val salt: Int = (inputName.length() * 9) % listResponses.length
     var baseNumber: Int = salt
     for ((c) <- inputName){
-      baseNumber = (baseNumber * (c.toInt - 95)) % listResponses.length
+      baseNumber = (baseNumber * (c.toInt - 94)) % listResponses.length
       if (baseNumber == 0) { baseNumber = 1} // avoid problems with list ending
     }
     return listResponses(baseNumber)

@@ -1,20 +1,12 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-
+import Main from './Main'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-
-        <Container>
-          <div className='backgroundImage'>
-            <p>
-              Text here
-            </p>
-          </div>
-        </Container>
-
+      <Main/>
     </div>
   );
 }

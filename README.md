@@ -1,7 +1,13 @@
 # scalastar
 
-The purpose of this repository is to create a web application that generates warrior cat names based on some identifying features. Link to the original game can be found (here)[https://web.archive.org/web/20051013063148/http://warriorcats.com/name.html]  
+The purpose of this repository is to create a web application that generates warrior cat names based on some identifying features. Link to the original game can be found (here)[https://web.archive.org/web/20051013063148/http://warriorcats.com/name.ht  ml]  
+
+
 # Front End PLan
+
+https://coolors.co/1a2127-ec5d11-c8ad55-658e9c-8e5572
+Pallete
+
 
 Initialize application 
 
@@ -25,7 +31,6 @@ Each one will have input and output information
 
 Make an interface called Hasher with two methods 
 
-{
 
 //performs the hash
 String hash(String input)

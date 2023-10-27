@@ -45,7 +45,7 @@ heart
 jaw
 leaf
 leap
-leg- Appearance of legs; good runner.
+leg
 light
 mask
 mist

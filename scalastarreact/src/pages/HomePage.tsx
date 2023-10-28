@@ -1,11 +1,23 @@
 import React from 'react';
-import Container from '@mui/material/Container';
+import './HomePage.css'
+
+import logo from '../assets/logoOrange.png';
+
+
 
 function HomePage() {
   return (
-    <p>
-        HOMEPAGE
-    </p>
+    <>
+    <div className='titleContainer'>
+        <img 
+        src={logo}
+        className='titleImage'
+        />
+    </div>
+    <div className='titleOnImage'>
+        <h3> Name Generator</h3>
+    </div>
+    </>
   );
 }
 

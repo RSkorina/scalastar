@@ -22,7 +22,7 @@ class Main extends React.Component<{}, { currentPage: string }> {
     render() {
         const currentPage = this.state.currentPage;
         let PageState; 
-        if (currentPage == 'home'){
+        if (currentPage === 'home'){
             PageState = <HomePage></HomePage>
         }
 

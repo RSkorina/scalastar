@@ -1,0 +1,14 @@
+
+.titleContainer {
+    background: green;
+}
+.titleImage {
+    background: red;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 5%;
+}
+.titleOnImage{
+    font-size: 40px;    
+}
+  

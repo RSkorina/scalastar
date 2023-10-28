@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../HomePage.tsx", "../NameInputPage.tsx", "../ResultsPage.tsx"  ]
 }

@@ -28,18 +28,6 @@
   color: #61dafb;
 }
 
-.backgroundSize {
-  /* /* min-width:1200px;          */
-  /* width: auto !important;   Firefox will set width as auto */
-  width:1000px;            /* As IE ignores !important it will set width as 1000px; */
-  height:600px;
-  margin: auto;
-}
-
-.backgroundColorDefault {
-  background-color: #1A2127;
-}
-
 .container{
   margin: auto;
  }

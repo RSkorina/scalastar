@@ -1,0 +1,10 @@
+/* File: font.css */
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('./fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'EinsteinRomanOpti';
+    src: url('./fonts/EinSteinRomanOpti.otf') format('opentype'),
+}

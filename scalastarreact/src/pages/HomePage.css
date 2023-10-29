@@ -3,12 +3,16 @@
     background: green;
 }
 .titleImage {
-    background: red;
     margin-left: auto;  
     margin-right: auto;
     margin-top: 5%;
 }
+/* TODO: Fix these Margins */
 .titleOnImage{
-    font-size: 40px;    
+    font-size: 35px;
+    font-family: EinsteinRomanOpti;
+    position: absolute;
+    margin-top: -60px; 
+    margin-left: 360px;    
 }
   

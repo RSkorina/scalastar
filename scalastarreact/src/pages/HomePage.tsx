@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useState } from "react";
+
 import './HomePage.css'
 
 import logo from '../assets/logoOrange.png';
 
 
 
-function HomePage() {
+const HomePage = ({onClickNextPage}: {onClickNextPage: () => void}) =>  {
   return (
     <>
     <div className='titleContainer'>
         <img 
         src={logo}
+        alt='logo'
         className='titleImage'
         />
     </div>
-    <div className='titleOnImage'>
-        <h3> Name Generator</h3>
-    </div>
+    <h3 className='titleOnImage'>Name Generator</h3>
+        <button onClick={onClickNextPage}>Default</button>
     </>
   );
 }

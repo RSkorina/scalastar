@@ -10,26 +10,32 @@ class Main extends React.Component<{}, { currentPage: string }> {
         this.state = {currentPage: 'home'} // different states, home, input, results
     }
 
-    setPageHome(){
+    setPageHome(): void{
         this.setState({currentPage: 'home'})
     }
-    setPageInput(){
+    setPageInput(): void{
         this.setState({currentPage: 'input'})
     }
-    setPageResults(){
+    setPageResults(): void{
         this.setState({currentPage: 'results'})
     }
+    
     render() {
         const currentPage = this.state.currentPage;
-        let PageState; 
-        if (currentPage === 'home'){
-            PageState = <HomePage></HomePage>
+        const homePageProps = {
+            onClickNextPage: this.setPageInput()
         }
+        let PageState; 
+        // if (currentPage === 'home'){
+        //     console.log('home')
+        //     PageState = <HomePage onClickNextPage={() => this.setPageInput()}></HomePage>
+        // }
 
         return (
             <Container>
+                
                 <div className='backgroundSize backgroundColorDefault'>
-                    {PageState}
+                    {/* {PageState} */}
                 </div>
             </Container>
           );

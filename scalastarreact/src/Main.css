@@ -4,10 +4,13 @@
     /* width: auto !important;   Firefox will set width as auto */
     width:1000px;            /* As IE ignores !important it will set width as 1000px; */
     height:600px;
-    margin: auto;
-    color: white;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    /* Don't need to flex as column, just flex as rows and make the width 100%*/
   }
   
 .backgroundColorDefault {
     background-color: #1A2127;
-  }
+}

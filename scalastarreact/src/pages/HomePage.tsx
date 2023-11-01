@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import './HomePage.css'
 
 import logo from '../assets/logoOrange.png';
+
+
 
 
 
@@ -16,10 +18,14 @@ const HomePage = ({onClickNextPage}: {onClickNextPage: () => void}) =>  {
         className='titleImage'
         />
     </div>
-    <h3 className='titleOnImage'>Name Generator</h3>
-        <button onClick={onClickNextPage}>Default</button>
+    <div className='subtitlePosition'>
+      <h3 className='titleOnImage'>Name Generator</h3>
+    </div>
+    <div className='buttonPosition'> 
+      <button className='buttonMain' onClick={onClickNextPage}>Enter</button>
+    </div>
     </>
   );
-}
+} 
 
 export default HomePage;

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@mui/material/Container';
 
 import './Main.css';
-import HomePage from './pages/HomePage';
+import {HomePage, InputPage} from './pages/index';
 
 class Main extends React.Component<{}, { currentPage: string }> {
     constructor(props: any){
@@ -22,20 +22,18 @@ class Main extends React.Component<{}, { currentPage: string }> {
     
     render() {
         const currentPage = this.state.currentPage;
-        const homePageProps = {
-            onClickNextPage: this.setPageInput()
-        }
         let PageState; 
-        // if (currentPage === 'home'){
-        //     console.log('home')
-        //     PageState = <HomePage onClickNextPage={() => this.setPageInput()}></HomePage>
-        // }
+        if (currentPage === 'home'){
+            PageState = <HomePage onClickNextPage={() => this.setPageInput()}></HomePage>
+        }
+        else if (currentPage ==='input') {
+            PageState = <InputPage onClickNextPage={() => this.setPageInput()}></InputPage>
+        }
 
         return (
             <Container>
-                
                 <div className='backgroundSize backgroundColorDefault'>
-                    {/* {PageState} */}
+                    {PageState}
                 </div>
             </Container>
           );

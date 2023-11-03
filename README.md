@@ -1,6 +1,6 @@
 # scalastar
 
-The purpose of this repository is to create a web application that generates warrior cat names based on some identifying features. Link to the original game can be found (here)[https://web.archive.org/web/20051013063148/http://warriorcats.com/name.ht  ml]  
+The purpose of this repository is to create a web application that generates warrior cat names based on some identifying features. Link to the original game can be found (here)[https://web.archive.org/web/20051013063148/http://warriorcats.com/name.html]  
 
 
 # Front End PLan

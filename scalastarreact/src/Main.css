@@ -7,8 +7,9 @@
     /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     /* align-content: space-around; */
-    /* Don't need to flex as column, just flex as rows and make the width 100%*/
+    /* THIS WAS TERRIBLE ADVICE: Don't need to flex as column, just flex as rows and make the width 100%*/
   }
   
 .backgroundColorDefault {

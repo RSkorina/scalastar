@@ -8,7 +8,8 @@ import logo from '../assets/logoOrange.png';
 
 
 
-const HomePage = ({onClickNextPage}: {onClickNextPage: () => void}) =>  {
+const HomePage = ({onClickSetPageInput}: {onClickSetPageInput: () => void}) =>  {
+  console.log(onClickSetPageInput);
   return (
     <>
     <div className='titleContainer'>
@@ -22,7 +23,7 @@ const HomePage = ({onClickNextPage}: {onClickNextPage: () => void}) =>  {
       <h3 className='titleOnImage'>Name Generator</h3>
     </div>
     <div className='buttonPosition'> 
-      <button className='buttonMain' onClick={onClickNextPage}>Enter</button>
+      <button className='buttonMain' onClick={()=>onClickSetPageInput()}>Enter</button>
     </div>
     </>
   );

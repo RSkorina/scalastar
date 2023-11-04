@@ -1,16 +1,17 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 
+
 import './Main.css';
 import {HomePage, InputPage, ResultsPage} from './pages/index';
-
+import {BasicSwitch} from './components/BasicSwitch'
 import {originalNameHash} from './code/originalNameHash'
 
 const Main = () => {
     const [currentPage, setCurrentPage] = React.useState('home');
     const [firstName, setFirstName] = React.useState('');
     const [lastName, setLastName] = React.useState('');
-    const [hashType, setHashType] = React.useState('original');
+    const [isOriginalValue, setIsOriginalValue] = React.useState(true);
     const [warrriorName, setWarriorName] = React.useState('');
 
     const setPageHome = (): void => {
@@ -45,7 +46,6 @@ const Main = () => {
         PageState = <ResultsPage
             onClickSetPageHome={setPageHome}
             warriorName={warrriorName}
-
             />
     }
 
@@ -53,6 +53,14 @@ const Main = () => {
         <Container>
             <div className='backgroundSize backgroundColorDefault'>
                 {PageState}
+                <div className='switchPosition'>
+                    <BasicSwitch
+                        isOn={isOriginalValue}
+                        handleToggle={()=> setIsOriginalValue(!isOriginalValue)}
+                        onColor={'#000000'}
+                        offColor={'#FF0000'}
+                    />
+                </div>
             </div>
         </Container>
     );

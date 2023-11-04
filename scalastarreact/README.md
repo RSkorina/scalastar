@@ -1,3 +1,16 @@
+TODO: TODAY 
+This was a good morning. Everything you do takes time to finish. 
+
+
+Add switch that moves over on the input page
+https://upmostly.com/tutorials/build-a-react-switch-toggle-component
+
+Change Background color (and figure out a good way to changed other colors)
+Write updated hashing algorith
+ Copy Over repo to new Github
+Start Design process for new 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

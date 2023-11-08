@@ -15,7 +15,12 @@
 .backgroundColorDefault {
     background-color: #1A2127;
 }
+
+.backgroundColorAlternate {
+  background-color: rgb(140, 137, 137);
+}
 .switchPosition {
-  background-color: white;
-  
+  position: relative;
+  left: 85%;
+  top: 0%;
 }

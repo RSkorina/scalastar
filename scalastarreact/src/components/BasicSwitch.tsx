@@ -4,7 +4,8 @@ import { ComponentClass, useState } from 'react';
 import './BasicSwitch.css'
 
 export const BasicSwitch = ({
-        isOn, handleToggle,
+        isOn,
+        handleToggle,
         onColor='#000000',
         offColor='#FF0000'
     }: {

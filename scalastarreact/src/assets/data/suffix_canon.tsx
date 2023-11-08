@@ -1,4 +1,4 @@
-bark
+export const sufix_canon: string = `bark
 beam
 bee
 belly
@@ -72,9 +72,9 @@ slip
 snout
 snow
 song
-speck(le)
+speck
 splash
-spot(s)
+spot
 spring
 stalk
 stem
@@ -100,4 +100,4 @@ wind
 wing
 wish
 whisker
-whisper
+whisper`

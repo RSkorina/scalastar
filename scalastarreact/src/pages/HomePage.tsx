@@ -4,12 +4,13 @@ import './HomePage.css'
 
 import logo from '../assets/logoOrange.png';
 
-
-
-
-
-const HomePage = ({onClickSetPageInput}: {onClickSetPageInput: () => void}) =>  {
-  console.log(onClickSetPageInput);
+const HomePage = ({
+  onClickSetPageInput,
+  toggleSwitch
+}: {
+  onClickSetPageInput: () => void
+  toggleSwitch: JSX.Element
+}) =>  {
   return (
     <>
     <div className='titleContainer'>
@@ -25,6 +26,7 @@ const HomePage = ({onClickSetPageInput}: {onClickSetPageInput: () => void}) =>  
     <div className='buttonPosition'> 
       <button className='buttonMain' onClick={()=>onClickSetPageInput()}>Enter</button>
     </div>
+    {toggleSwitch}
     </>
   );
 } 

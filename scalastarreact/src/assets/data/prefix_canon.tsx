@@ -1,4 +1,4 @@
-Acorn
+export const prefix_canon: string = `Acorn
 Adder
 Alder
 Amber
@@ -318,4 +318,4 @@ Wood
 Wooly
 Wren
 Yarrow
-Yellow
+Yellow`

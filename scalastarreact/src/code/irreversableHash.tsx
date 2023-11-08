@@ -1,4 +1,3 @@
-const fs = require('fs')
 import {prepareName, capitalizeFirstLetter} from './hashHelper'
 import { prefix_canon, sufix_canon } from '../assets/data' 
 
